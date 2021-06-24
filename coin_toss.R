@@ -6,8 +6,8 @@ inv_logit <- function(x) {
     exp(x) / (exp(x) + 1)
 }
 
-# 100 coin toss without success
-y <- rep(0, 100)
+# 78 coin toss without success
+y <- rep(0, 78)
 
 # fit lm model
 mod_lm <- glm(y ~ 1, family = stats::binomial())
